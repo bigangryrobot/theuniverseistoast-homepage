@@ -3,9 +3,9 @@ PreviewPost = React.createClass({
     let post = this.props.post;
     
     if ( this.props.singlePost ) {
-      return <h4 className="post-title">{ post.title }</h4>;
+      return <h1 className="post-title">{ post.title }</h1>;
     } else {
-      return <h4 className="post-title"><a href={ `/posts/${ post.slug }`}>{ post.title }</a></h4>;
+      return <h1 className="post-title"><a href={ `/posts/${ post.slug }`}>{ post.title }</a></h1>;
     }
   },
   getHTML( markdown ) {

@@ -51,23 +51,13 @@ li active {
   z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: rgba(255, 255, 255, 0.8);
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { 
     background-color: transparent;
+    color: rgba(119, 119, 119, 0.74);
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   color: rgba(255, 255, 255, 0.8);
     background-color: transparent;
-}
-.navbar-nav > li > .dropdown-menu {
-    background: rgba(0, 0, 0, 0.33);
-}
-.navbar-nav > li > .dropdown-menu > a:focus {
-    background: rgba(0, 0, 0, 0.33);
-}
-
-.navbar-nav > li > .dropdown-menu{
-    background: rgba(0, 0, 0, 0.33);
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
@@ -89,7 +79,10 @@ li active {
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(119, 119, 119, 0.74);
+    background: inherit;
+    border: inherit;
+    box-shadow: none;    
   }
   .navbar-custom .nav li a {
     color: white;
@@ -98,9 +91,19 @@ li active {
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus,
   .navbar-custom .nav li a:active {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(119, 119, 119, 0.74);
+    background: inherit;
+    border: inherit;
+    box-shadow: none;    
   }
 }
+.dropdown-menu {
+    color: #fff;
+    background: inherit;
+    border: inherit;
+    box-shadow: none;    
+}
+
 @media only screen and (min-width: 1170px) {
   .navbar-custom {
     -webkit-transition: background-color 0.3s;
@@ -158,6 +161,7 @@ li active {
   margin-bottom: 50px;
   background: url('/header-background.jpg');
   background-size: cover;
+  background-position: center;
 
 }
 .intro-header .site-heading,
@@ -354,6 +358,11 @@ form .row:first-child .floating-label-form-group {
   letter-spacing: 1px;
   border-radius: 0;
   padding: 15px 25px;
+}
+.btn-orange {
+    background-color: #FF8160;
+    border-color: #FF8160;
+    color:#fff;
 }
 .btn-lg {
   font-size: 16px;

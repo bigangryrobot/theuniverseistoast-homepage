@@ -4,7 +4,7 @@ AppHeader = React.createClass({
     return <header className="intro-header">
                 <div className="container">
                   <div className="row">
-                    <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div className="col-lg-12">
                       <div className="site-heading">
                         <h1>{ this.props.mainText }</h1>
                         <hr className="small"/>
@@ -18,7 +18,7 @@ AppHeader = React.createClass({
         return <header className="intro-header">
                     <div className="container">
                       <div className="row">
-                        <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div className="col-lg-12">
                           <div className="site-heading">
                             <h1>fire up the broadband</h1>
                             <hr className="small"/>
