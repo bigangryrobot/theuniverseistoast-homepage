@@ -6,7 +6,8 @@ AuthenticatedNavigation = React.createClass({
     return {
       items: {
         left: [
-          { uid: 'posts', href: '/posts', label: 'Posts' }
+          { uid: 'posts', href: '/posts', label: 'posts' },
+          { uid: 'about', href: '/about', label: 'about' }
         ],
         right: [
           {

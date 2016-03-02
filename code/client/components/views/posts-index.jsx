@@ -13,8 +13,8 @@ PostsIndex = React.createClass({
     return {
       posts: Posts.find( query, { sort: { updated: -1 } } ).fetch()
     };
-  },
-  renderHeader() {
+  }, 
+  renderJumbotron() {
     if ( this.props.tag ) {
       return <Jumbotron className="tags-header">
         <h4>Posts tagged with: { this.props.tag }.</h4>
@@ -24,9 +24,11 @@ PostsIndex = React.createClass({
     }
   },
   renderPosts() {
-    if (!(Meteor.user() )) {
+    if (!(Meteor.user())) {
       if ( this.data.posts.length > 0 ) {
-            return <ListGroup linked={ true } items={ this.data.posts } />;
+            return this.data.posts.map( ( post ) => {
+              return <PreviewPost key={ post._id } post={ post } />;
+            });
           } else {
             return <WarningAlert>No posts found.</WarningAlert>;
           }
@@ -43,9 +45,10 @@ PostsIndex = React.createClass({
   },
   render() {
     return <div className="posts">
+    <AppHeader/>
       <GridRow>
         <GridColumn className="col-xs-12 col-sm-8 col-sm-offset-2">
-          { this.renderHeader() }
+          { this.renderJumbotron() }
           { this.renderPosts() }
         </GridColumn>
       </GridRow>

@@ -27,12 +27,15 @@ PostsList = React.createClass({
     }
   },
   render() {
-    return <GridRow>
+    return <div className="posts">
+    <AppHeader/>
+    <GridRow>
       <GridColumn className="col-xs-12 col-sm-8 col-sm-offset-2">
         <SuccessButton type="button" label="New Post" onClick={ this.handleNewPost } />
         <PageHeader size="h4" label="Posts" />
         { this.renderPostsList() }
       </GridColumn>
-    </GridRow>;
+    </GridRow>
+    </div>;
   }
 });

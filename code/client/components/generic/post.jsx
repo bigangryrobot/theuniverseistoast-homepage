@@ -17,7 +17,7 @@ Post = React.createClass({
     if ( tags ) {
       return <div className="tags">
         {tags.map( ( tag ) => {
-          return <a className="tag" href={ `/tags/${ tag }` }>#{ tag }</a>;
+          return <a className="label label-default" href={ `/tags/${ tag }` }># { tag }</a>;
         })}
       </div>;
     }
@@ -27,10 +27,12 @@ Post = React.createClass({
         post                 = this.props.post;
 
     return <div className="post-preview">
-      { this.getPostTitle() }
-      <div className="post-body" dangerouslySetInnerHTML={ this.getHTML( post.content ) } />
+      <div className="pull-left">{ this.getPostTitle() }</div>
+      <div className="pull-right">{ this.renderTags( post.tags ) }</div>
+      <div className="clearfix"/>
+      <div className="post-body" />
+      { post.content }
       <p className="post-meta"><strong>Last Updated:</strong> { formatLastUpdate( post.updated ) } by { post.author }</p>
-      { this.renderTags( post.tags ) }
     </div>;
   }
 });

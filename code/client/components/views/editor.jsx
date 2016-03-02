@@ -41,6 +41,7 @@ Editor = React.createClass({
             Bert.alert( error.reason, 'danger' );
           } else {
             Bert.alert( 'Post saved!', 'success' );
+            FlowRouter.go( 'index' );
           }
         });
       }
