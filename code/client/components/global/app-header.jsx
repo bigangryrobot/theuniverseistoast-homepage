@@ -1,7 +1,7 @@
 AppHeader = React.createClass({
   render() {
     if ( this.props.mainText ) {
-    return <header className="intro-header">
+    return <header className="intro-header" data-stellar-background-ratio="0.5">
                 <div className="container">
                   <div className="row">
                         <div className="col-lg-12">
@@ -15,7 +15,8 @@ AppHeader = React.createClass({
                 </div>
               </header>;
       } else {
-        return <header className="intro-header">
+
+        return <header className="intro-header" data-stellar-background-ratio="0.5">
                     <div className="container">
                       <div className="row">
                         <div className="col-lg-12">

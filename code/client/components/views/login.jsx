@@ -49,7 +49,7 @@ Login = React.createClass({
     };
 
     return <div className="singlepost">
-    <AppHeader mainText="Login" subHeading=""/>
+    <AppHeader mainText="Login" subHeading="welcome to something awesome"/>
     <GridRow>
       <GridColumn className="col-xs-12 col-sm-8 col-sm-offset-2">
         <InfoAlert>

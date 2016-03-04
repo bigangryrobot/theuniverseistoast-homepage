@@ -162,7 +162,6 @@ li active {
   background: url('/header-background.jpg');
   background-size: cover;
   background-position: center;
-
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -405,12 +404,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #FF8160;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #FF8160;
 }
 img::selection {
   color: white;
@@ -420,6 +419,9 @@ img::-moz-selection {
   color: white;
   background: transparent;
 }
+.progress-bar {
+  background-color: #FF8160;
+}
 body {
-  webkit-tap-highlight-color: #0085a1;
+  webkit-tap-highlight-color: #FF8160;
 }

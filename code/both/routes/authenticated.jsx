@@ -9,6 +9,12 @@ authenticatedRoutes.route( '/posts', {
   }
 });
 
+authenticatedRoutes.route( '/pictures', {
+  name: 'pictures',
+  action() {
+    ReactLayout.render( App, { yield: <ImagesList /> } );
+  }
+});
 authenticatedRoutes.route( '/posts/:_id/edit', {
   name: 'editor',
   action( params ) {
