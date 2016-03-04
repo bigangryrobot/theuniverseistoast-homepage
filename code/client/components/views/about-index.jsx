@@ -10,6 +10,8 @@ AboutIndex = React.createClass({
           <hr/>
           <GridColumn className="col-xs-12">
             <p>A learning adventure in mongodb, reactjs, <a href="http://meteor.com">meteor</a> and more written by my hand and provided to the comunity in full on <a href="https://github.com/bigangryrobot/theuniverseistoast-homepage">github</a>. Header background is from <a href="http://deadastronauts.com/">this</a> amazing artist and yes I did remove their brand from the image but no it was not for anything other than to clean it up.</p>
+            <img className="img-responsive center-block" src="/code-screenshot.png" alt=""/>
+            <span className="caption text-muted">Wow look at that indentation!</span>
           </GridColumn>
         </div>
 
@@ -18,9 +20,9 @@ AboutIndex = React.createClass({
           <h4>Who am I and what do I do</h4>
           <hr/>
           <GridColumn className="col-xs-2">
-            <img className="center-block" src="/about-pic.png" alt="" />
-            <h3 className="text-center">Clark Beverlin</h3>
-            <h4 className="text-center text-muted">engineer with many hats</h4>     
+            <img className="img-responsive center-block" src="/about-pic.png" alt="" />
+            <h4 className="text-center">Clark Beverlin</h4>
+            <h4 className="text-center"><small>engineer with many hats</small></h4>
           </GridColumn>
           <GridColumn className="col-xs-4">
             <p>So what do I do? The simple answer is well, not so simple. I enable developers and buisnesses through automation, great archetecture, and analytics using avaiable tools or by creating my own. I make the the impossible possible within reason, I keep the lights on and platters/bits whirring along without interruption. I make the devs play nice with the ops and arm wrestle with the business folks. Most importantly, I learn constantly and push exponentionally.</p>
@@ -153,7 +155,7 @@ AboutIndex = React.createClass({
               </fieldset>
               <fieldset className="form-group">                  
                 <label for="exampleTextarea">Message</label>
-                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                <textarea className="form-control" id="exampleTextarea" rows="3"></textarea>
               </fieldset>
               <button type="submit" className="btn btn-primary">Submit</button>
             </form>
